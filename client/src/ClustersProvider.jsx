@@ -5,15 +5,15 @@ export const ClustersContext = React.createContext();
 
 export default ({ children }) => {
 
-  const [clusters, setClusters ] = useState([]);
+  const [clusters, setClusters ] = useState(undefined);
 
   useEffect(() => {
-    api.fetchClusters().then(({ data }) => setClusters(data));
+    api.fetchClusters().then(({ data }) => setClusters(data.clusters));
   }, []);
 
   return  (
     <ClustersContext.Provider value={clusters}>
-      {children}
+      {clusters && children}
     </ClustersContext.Provider>
   )
 }
