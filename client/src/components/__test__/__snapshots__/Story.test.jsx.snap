@@ -6,6 +6,7 @@ exports[`Story should render correctly with selected item 1`] = `
     class="story"
   >
     <img
+      alt="media-img"
       class="story__image"
       src="https://www.libyaakhbar.com/wp-content/uploads/2019/12/637107994911337082_131224338148_433_LTH.jpg"
     />
@@ -35,6 +36,7 @@ exports[`Story should render correctly with selected item 1`] = `
     <a
       class="story__link"
       href="https://www.libyaakhbar.com/news/1080980.html"
+      rel="noopener noreferrer"
       target="_blank"
     >
       Visit post on 

@@ -11,12 +11,12 @@ const Clusters = ({ clusters, selectedCluster, clusterClickHandler }) => {
       <ul>
       {clusters && clusters.map((cluster, index) => (
         <li className={`${selectedCluster === index ? 'selected' : ''}`} key={cluster.id} onClick={() => clusterClickHandler(index)}>
-          <h5>{cluster.id}</h5>
+          <h5>Cluster {index + 1}</h5>
           <p>{moment(cluster.time).format('MM/DD/YYYY')}</p>
-          <p>Total stories: <span>{cluster.story_count}</span></p>
-          <p>Earliest story: <span>{moment(cluster.earliest_story).format('MM/DD/YYYY')}</span></p>
-          <p>Latest story: <span>{moment(cluster.latest_story).format('MM/DD/YYYY')}</span></p>
-          <p>Location: <span>{getName(cluster.location.country)}</span></p>
+          <div>Total stories: <span>{cluster.story_count}</span></div>
+          <div>Earliest story: <span>{moment(cluster.earliest_story).format('MM/DD/YYYY')}</span></div>
+          <div>Latest story: <span>{moment(cluster.latest_story).format('MM/DD/YYYY')}</span></div>
+          <div>Location: <span>{getName(cluster.location.country)}</span></div>
         </li>
       ))}
       </ul>
