@@ -5,6 +5,6 @@ export default () => {
   const clusters = useContext(ClustersContext);
 
   return (
-    <h2>Clusters view</h2>
+    <p>{JSON.stringify(clusters, undefined, 2)}</p>
   )
 }

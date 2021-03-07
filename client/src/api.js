@@ -1,5 +1,5 @@
 const headers = new Headers();
-headers.append("Content-Type", "application/json");
+headers.append('Content-Type', 'application/json');
 
 var graphql = JSON.stringify({
   query: `
@@ -38,18 +38,20 @@ var graphql = JSON.stringify({
       }
     }
   `,
-  variables: {}
-})
-var requestOptions = {
+  variables: {},
+});
+
+const requestOptions = {
   method: 'POST',
   headers: headers,
-  body: graphql
+  body: graphql,
 };
 
-const fetchClusters = () => fetch("http://localhost:3030/graphql", requestOptions)
-  .then(response => response.json())
-  .catch(error => console.log('error', error));
+const fetchClusters = () =>
+  fetch('http://localhost:3030/graphql', requestOptions)
+    .then((response) => response.json())
+    .catch((error) => console.log('error', error));
 
 export default {
-  fetchClusters
+  fetchClusters,
 };
