@@ -1,0 +1,29 @@
+.story {
+  margin: 1em;
+  @media (min-width: $breakpoint-desktop) {
+    overflow: scroll;
+  }
+}
+
+.story__image {
+  text-align: center;
+  img {
+    width: 100%;
+    object-fit: cover;
+    @media (min-width: $breakpoint-desktop) {
+      max-width: 70%;
+    }
+  }
+}
+
+.story__header {
+  text-align: center;
+}
+
+.story__hashtags {
+  font-size: 0.8em;
+}
+
+.story__link {
+  color: $link-color;
+}

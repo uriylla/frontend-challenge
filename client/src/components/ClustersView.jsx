@@ -6,11 +6,10 @@ import Story from './Story';
 export default () => {
   const clusters = useContext(ClustersContext);
   const [selectedCluster, setSelectedCluster] = useState(0);
-  console.log({clusters})
   return (
     <div>
       {clusters ?
-      <div style={{display: 'flex'}}>
+      <div className="clusters-view">
         <Clusters clusters={clusters} selectedCluster={selectedCluster} clusterClickHandler={setSelectedCluster} />
         <Story story={clusters[selectedCluster].representative_story}/>
       </div> :

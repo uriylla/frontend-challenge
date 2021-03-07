@@ -20,14 +20,14 @@ describe('Clusters', () => {
     const { getAllByRole} = renderComponent({
       selectedCluster: 0
     });
-    expect(getAllByRole('listitem').map(item => item.className)).toEqual(['selected', '']);
+    expect(getAllByRole('listitem').map(item => item.className)).toEqual(['cluster--selected', 'cluster']);
   });
 
   it('should select the second item', () => {
     const { getAllByRole} = renderComponent({
       selectedCluster: 1
     });
-    expect(getAllByRole('listitem').map(item => item.className)).toEqual(['', 'selected']);
+    expect(getAllByRole('listitem').map(item => item.className)).toEqual(['cluster', 'cluster--selected']);
   });
 
   it('should change selected item', () => {

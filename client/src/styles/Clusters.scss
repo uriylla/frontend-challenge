@@ -1,0 +1,60 @@
+.clusters {
+  min-width: 25em;
+  @media (min-width: $breakpoint-desktop) {
+    overflow: scroll;
+  }
+}
+
+.clusters__header {
+  height: 2em;
+  text-align: center;
+  margin: 1em 0 0 0;
+}
+
+.cluster {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: $cluster-background-color;
+  margin: 1em;
+  border-radius: 3px;
+  border: 1px solid gray;
+  &:hover {
+    cursor: pointer;
+    background-color: gray;
+  }
+  &--selected {
+    background-color: ghostwhite;
+    color: black;
+    &:hover {
+      background-color: ghostwhite;
+    }
+  }
+}
+
+.cluster__header {
+  display: flex;
+  justify-content: space-between;
+  h4,
+  p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+}
+
+.cluster__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cluster__thumbnail {
+  width: 7em;
+  height: 4.6em;
+  object-fit: contain;
+  margin: 0.5em 0;
+}
+
+.cluster__details {
+  font-size: 0.8em;
+  margin-top: 0.7em;
+}
