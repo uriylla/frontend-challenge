@@ -10,7 +10,7 @@ const Clusters = ({ clusters, selectedCluster, clusterClickHandler }) => {
       <h4>Clusters</h4>
       <ul>
       {clusters && clusters.map((cluster, index) => (
-        <li key={cluster.id} onClick={() => clusterClickHandler(index)}>
+        <li className={`${selectedCluster === index ? 'selected' : ''}`} key={cluster.id} onClick={() => clusterClickHandler(index)}>
           <h5>{cluster.id}</h5>
           <p>{moment(cluster.time).format('MM/DD/YYYY')}</p>
           <p>Total stories: <span>{cluster.story_count}</span></p>

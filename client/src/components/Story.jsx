@@ -8,14 +8,14 @@ const Story = ({story}) => {
       <h4 className="story__title">{story.title}</h4>
       <div className="story__body">
       {story.sentences.map((sentence, i) => 
-        <p className="story-body story-body__sentence" key={i}>{sentence}</p>
+        <p className="story-body story__sentence" key={i}>{sentence}</p>
       )}
       </div>
       <p>Author: {story.author.name}</p>
       <a className="story__link" target="_blank" href={story.link}>Visit post on {story.source.name}</a>
       <ul className="story__hashtags">
         {story.hashtags.map(hashtag => (
-          <p>{hashtag}</p>
+          <p key={hashtag}>{hashtag}</p>
         ))}
       </ul>
     </div>

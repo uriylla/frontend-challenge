@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Story should render correctly with selected item 1`] = `
+<div>
+  <div
+    class="story"
+  >
+    <img
+      class="story__image"
+      src="https://www.libyaakhbar.com/wp-content/uploads/2019/12/637107994911337082_131224338148_433_LTH.jpg"
+    />
+    <h4
+      class="story__title"
+    >
+      ميركل تعزى رئيس وزراء ألبانبا فى وفاة زوجة نجله فى الزلزال - اخبار
+    </h4>
+    <div
+      class="story__body"
+    >
+      <p
+        class="story-body story__sentence"
+      >
+        German Chancellor Angela Merkel expressed her deep sympathy for the victims of the earthquake that hit Albania and the Albanian government.
+      </p>
+      <p
+        class="story-body story__sentence"
+      >
+        According to reports, a partner of the life of a Prime Minister of Albania died during the earthquake.
+      </p>
+    </div>
+    <p>
+      Author: 
+      ايوان ليبيا
+    </p>
+    <a
+      class="story__link"
+      href="https://www.libyaakhbar.com/news/1080980.html"
+      target="_blank"
+    >
+      Visit post on 
+      Libya Akhbar
+    </a>
+    <ul
+      class="story__hashtags"
+    >
+      <p>
+        #Earthquake
+      </p>
+      <p>
+        #Albania
+      </p>
+      <p>
+        #Albanians
+      </p>
+      <p>
+        #PrimeMinisterOfTheUnitedKingdom
+      </p>
+      <p>
+        #Tirana
+      </p>
+      <p>
+        #ChancellorOfGermany
+      </p>
+      <p>
+        #AngelaMerkel
+      </p>
+      <p>
+        #Telegraphy
+      </p>
+      <p>
+        #Rama
+      </p>
+      <p>
+        #Pain
+      </p>
+      <p>
+        #Germany
+      </p>
+      <p>
+        #EuropeanUnion
+      </p>
+      <p>
+        #Earth
+      </p>
+      <p>
+        #Port
+      </p>
+    </ul>
+  </div>
+</div>
+`;
