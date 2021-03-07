@@ -2,14 +2,25 @@
 
 exports[`Story should render correctly with selected item 1`] = `
 <div>
-  <div
+  <article
     class="story"
   >
-    <img
-      alt="media-img"
+    <header
+      class="story__header"
+    >
+      <h2>
+        Representative story
+      </h2>
+    </header>
+    <div
       class="story__image"
-      src="https://www.libyaakhbar.com/wp-content/uploads/2019/12/637107994911337082_131224338148_433_LTH.jpg"
-    />
+    >
+      <img
+        alt="media-img"
+        class="story__image"
+        src="https://www.libyaakhbar.com/wp-content/uploads/2019/12/637107994911337082_131224338148_433_LTH.jpg"
+      />
+    </div>
     <h4
       class="story__title"
     >
@@ -42,52 +53,24 @@ exports[`Story should render correctly with selected item 1`] = `
       Visit post on 
       Libya Akhbar
     </a>
-    <ul
+    <p
       class="story__hashtags"
     >
-      <p>
-        #Earthquake
-      </p>
-      <p>
-        #Albania
-      </p>
-      <p>
-        #Albanians
-      </p>
-      <p>
-        #PrimeMinisterOfTheUnitedKingdom
-      </p>
-      <p>
-        #Tirana
-      </p>
-      <p>
-        #ChancellorOfGermany
-      </p>
-      <p>
-        #AngelaMerkel
-      </p>
-      <p>
-        #Telegraphy
-      </p>
-      <p>
-        #Rama
-      </p>
-      <p>
-        #Pain
-      </p>
-      <p>
-        #Germany
-      </p>
-      <p>
-        #EuropeanUnion
-      </p>
-      <p>
-        #Earth
-      </p>
-      <p>
-        #Port
-      </p>
-    </ul>
-  </div>
+      #Earthquake 
+      #Albania 
+      #Albanians 
+      #PrimeMinisterOfTheUnitedKingdom 
+      #Tirana 
+      #ChancellorOfGermany 
+      #AngelaMerkel 
+      #Telegraphy 
+      #Rama 
+      #Pain 
+      #Germany 
+      #EuropeanUnion 
+      #Earth 
+      #Port 
+    </p>
+  </article>
 </div>
 `;

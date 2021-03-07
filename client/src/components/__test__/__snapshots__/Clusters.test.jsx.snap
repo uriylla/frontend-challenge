@@ -2,79 +2,119 @@
 
 exports[`Clusters should render correctly 1`] = `
 <div>
-  <div>
-    <h4>
+  <div
+    class="clusters"
+  >
+    <h2
+      class="clusters__header"
+    >
       Clusters
-    </h4>
-    <ul>
+    </h2>
+    <ul
+      class="clusters__list"
+    >
       <li
-        class="selected"
+        class="cluster cluster--selected"
       >
-        <h5>
-          Cluster 
-          1
-        </h5>
-        <p>
-          12/01/2019
-        </p>
-        <div>
-          Total stories: 
-          <span>
-            67028
-          </span>
-        </div>
-        <div>
-          Earliest story: 
-          <span>
-            11/22/2019
-          </span>
-        </div>
-        <div>
-          Latest story: 
-          <span>
-            12/13/2019
-          </span>
-        </div>
-        <div>
-          Location: 
-          <span>
-            Turkey
-          </span>
+        <header
+          class="cluster__header"
+        >
+          <h4>
+            Cluster 
+            1
+          </h4>
+          <p>
+            Dec 1st 19
+          </p>
+        </header>
+        <div
+          class="cluster__content"
+        >
+          <div
+            class="cluster__details"
+          >
+            <div>
+              Total stories: 
+              <span>
+                67028
+              </span>
+            </div>
+            <div>
+              Earliest story: 
+              <span>
+                Nov 22nd 19
+              </span>
+            </div>
+            <div>
+              Latest story: 
+              <span>
+                Dec 13th 19
+              </span>
+            </div>
+            <div>
+              Location: 
+              <span>
+                Turkey
+              </span>
+            </div>
+          </div>
+          <img
+            alt="media-img"
+            class="cluster__thumbnail"
+            src="https://www.libyaakhbar.com/wp-content/uploads/2019/12/637107994911337082_131224338148_433_LTH.jpg"
+          />
         </div>
       </li>
       <li
-        class=""
+        class="cluster"
       >
-        <h5>
-          Cluster 
-          2
-        </h5>
-        <p>
-          12/04/2019
-        </p>
-        <div>
-          Total stories: 
-          <span>
-            49262
-          </span>
-        </div>
-        <div>
-          Earliest story: 
-          <span>
-            11/20/2019
-          </span>
-        </div>
-        <div>
-          Latest story: 
-          <span>
-            12/08/2019
-          </span>
-        </div>
-        <div>
-          Location: 
-          <span>
-            China
-          </span>
+        <header
+          class="cluster__header"
+        >
+          <h4>
+            Cluster 
+            2
+          </h4>
+          <p>
+            Dec 4th 19
+          </p>
+        </header>
+        <div
+          class="cluster__content"
+        >
+          <div
+            class="cluster__details"
+          >
+            <div>
+              Total stories: 
+              <span>
+                49262
+              </span>
+            </div>
+            <div>
+              Earliest story: 
+              <span>
+                Nov 20th 19
+              </span>
+            </div>
+            <div>
+              Latest story: 
+              <span>
+                Dec 8th 19
+              </span>
+            </div>
+            <div>
+              Location: 
+              <span>
+                China
+              </span>
+            </div>
+          </div>
+          <img
+            alt="media-img"
+            class="cluster__thumbnail"
+            src="https://images2.corriereobjects.it/methode_image/socialshare/2019/11/22/c19a7404-14f3-11ea-b557-51f830ff2b1f.jpg"
+          />
         </div>
       </li>
     </ul>
