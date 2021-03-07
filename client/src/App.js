@@ -1,16 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import ClustersProvider from './ClustersProvider';
+import ClustersView from './components/ClustersView';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and start development.
-        </p>
-      </header>
+        <ClustersProvider>
+          <ClustersView />
+        </ClustersProvider>
     </div>
   );
 }

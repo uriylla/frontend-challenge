@@ -5,8 +5,8 @@ const findStoryById = id => stories.find(story => story.id === id);
 
 const findClusterById = id => clusters.find(cluster => cluster.id === id)
 
-const representativeStoryResolver = source => {
-  const story = findStoryById(findClusterById(source.id).representative_story.id);
+const representativeStoryResolver = ({ id }) => {
+  const story = findStoryById(findClusterById(id).representative_story.id);
   return {
     id: story.id,
     title: story.title,
